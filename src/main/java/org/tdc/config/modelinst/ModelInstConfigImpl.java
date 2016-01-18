@@ -3,14 +3,12 @@ package org.tdc.config.modelinst;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.tdc.config.XMLConfigWrapper;
 import org.tdc.config.modeldef.ModelDefConfig;
-import org.tdc.config.schema.SchemaConfig;
 import org.tdc.util.Addr;
 
 public class ModelInstConfigImpl implements ModelInstConfig {

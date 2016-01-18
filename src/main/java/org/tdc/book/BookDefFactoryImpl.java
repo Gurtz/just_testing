@@ -1,7 +1,6 @@
 package org.tdc.book;
 
 import org.tdc.config.book.BookDefConfig;
-import org.tdc.config.book.BookDefConfigFactory;
 import org.tdc.config.modelinst.ModelInstConfigFactory;
 import org.tdc.modelinst.ModelInstFactory;
 import org.tdc.util.Addr;

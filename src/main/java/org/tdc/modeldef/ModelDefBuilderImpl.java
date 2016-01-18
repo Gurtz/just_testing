@@ -11,7 +11,6 @@ import org.slf4j.LoggerFactory;
 import org.tdc.config.modeldef.ModelDefConfig;
 import org.tdc.model.MPathIndex;
 import org.tdc.schema.Schema;
-import org.w3c.dom.DOMError;
 import org.w3c.dom.DOMErrorHandler;
 import org.w3c.dom.bootstrap.DOMImplementationRegistry;
 

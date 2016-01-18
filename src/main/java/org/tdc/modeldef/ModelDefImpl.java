@@ -3,7 +3,6 @@ package org.tdc.modeldef;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.tdc.config.modeldef.ModelDefConfig;
-import org.tdc.config.modelinst.ModelInstConfig;
 import org.tdc.model.MPathIndex;
 import org.tdc.schema.Schema;
 
