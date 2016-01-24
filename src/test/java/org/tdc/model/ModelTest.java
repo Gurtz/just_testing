@@ -104,17 +104,22 @@ public class ModelTest {
 	@Test
 	public void
 	test1() {
-		String mdAddr = "Test/TestSchemaV1.0/ModelDef_Test1";
+//		String mdAddr = "Test/TestSchemaV1.0/ModelDef_Test1";
+//		String miAddr = mdAddr + "/ModelInst1";
+		String mdAddr = "Test/TestSchemaV1.0/ModelDef_OldTest";
 		String miAddr = mdAddr + "/ModelInst1";
-		System.out.println("--------------------------------------------------");
-		outputModelDefSummary(mdAddr);
-		System.out.println("--------------------------------------------------");
-		outputModelDefMPath(mdAddr);
-		System.out.println("--------------------------------------------------");
-		outputModelInstSummary(miAddr);
-		System.out.println("--------------------------------------------------");
-		outputModelInstMPath(miAddr);
-//		compareModelDefSummary("Test/TestSchemaV1.0/ModelDef_OldTest", "ModelDefSummary.txt");
+//		System.out.println("--------------------------------------------------");
+//		outputModelDefSummary(mdAddr);
+//		System.out.println("--------------------------------------------------");
+//		outputModelDefMPath(mdAddr);
+//		System.out.println("--------------------------------------------------");
+//		outputModelInstSummary(miAddr);
+//		System.out.println("--------------------------------------------------");
+//		outputModelInstMPath(miAddr);
+		compareModelDefSummary(mdAddr, "ModelDefSummary.txt");
+		compareModelDefMPath(mdAddr, "ModelDefMPath.txt");
+		compareModelInstSummary(miAddr, "ModelInstSummary.txt");
+		compareModelInstMPath(miAddr, "ModelInstMPath.txt");
 	}
 	
 	@Test
