@@ -1,7 +1,7 @@
 package org.tdc.book;
 
 import org.tdc.config.book.BookDefConfig;
-import org.tdc.config.modelinst.ModelInstConfigFactory;
+import org.tdc.config.model.ModelConfigFactory;
 import org.tdc.modelinst.ModelInstFactory;
 import org.tdc.util.Addr;
 import org.tdc.util.Cache;
@@ -11,11 +11,11 @@ public class BookDefFactoryImpl implements BookDefFactory {
 	
 	private Cache<BookDef> cache = new CacheImpl<>();
 	private ModelInstFactory modelInstFactory;
-	private ModelInstConfigFactory modelInstConfigFactory;
+	private ModelConfigFactory modelConfigFactory;
 	
-	public BookDefFactoryImpl(ModelInstFactory modelInstFactory, ModelInstConfigFactory modelInstConfigFactory) {
+	public BookDefFactoryImpl(ModelInstFactory modelInstFactory, ModelConfigFactory modelConfigFactory) {
 		this.modelInstFactory = modelInstFactory;
-		this.modelInstConfigFactory = modelInstConfigFactory;
+		this.modelConfigFactory = modelConfigFactory;
 	}
 	
 	@Override
@@ -31,7 +31,7 @@ public class BookDefFactoryImpl implements BookDefFactory {
 	
 	private BookDef buildNewBookDef(BookDefConfig config) {
 		BookDefBuilder bookDefBuilder = getBookDefBuilder();
-		return bookDefBuilder.build(config, modelInstFactory, modelInstConfigFactory);
+		return bookDefBuilder.build(config, modelInstFactory, modelConfigFactory);
 	}
 	
 	protected BookDefBuilder getBookDefBuilder() {
